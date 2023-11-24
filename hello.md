@@ -3,7 +3,7 @@ This document will introduce how to use the ChatGLM3-6B for tool invocation. Cur
 
 ## Building System Prompt
 Here are two examples of tool invocation. First, prepare the description information of the data to be built.
-
+<!-- 哈囉大家 -->
 ```python
 tools = [
     {
