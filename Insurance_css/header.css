@@ -11,7 +11,7 @@ body{
 }
 
 .header-row .logo1{
-    width: 372px;
+    width: 300px;
     height:85px;
     margin-top: -10px;
 }
@@ -31,7 +31,7 @@ body{
 .header-row .menu ul {
     display: flex;
     gap: 20px;
-    
+
 }
 
 .header-row .menu li {
