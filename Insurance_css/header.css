@@ -57,12 +57,6 @@ body{
     height: 100vh;
 }
 
-.p-1{
-    background: rgb(58, 58, 58);
-    background-image: url(../Insurance_images/image/banner.jpeg);
-    background-size: cover;
-    position: relative;
-}
 .p-1::before{
     content: "";
     position: absolute;
