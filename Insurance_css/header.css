@@ -42,7 +42,7 @@ body{
     color: red;
     
 }
-
+/*巢狀迴圈的 class樣式*/
 .header-row .menu a{
     color: #16e4a3;
     display: block;
