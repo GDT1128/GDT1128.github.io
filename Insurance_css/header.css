@@ -40,7 +40,31 @@ body{
 
 .header-row .menu li :hover{
     color: red;
+    
 }
+
+.header-row .menu a{
+    color: #16e4a3;
+    display: block;
+    gap: 20px;
+}
+
+.header-row .menu >ul{
+    display: flex;
+    justify-content: center;
+}
+
+.header-row .menu .menu-item:hover .sub-menu{
+    display: flex;
+} 
+
+.header-row .menu .sub-menu{
+    display: none;
+    position: absolute;
+    color: rgb(35, 90, 110);
+
+}
+
 
 .header-row .menu .en {
     font-size: 0.8rem;
@@ -294,3 +318,4 @@ body{
     justify-content: center;
     margin-top: 10px;
 }
+
