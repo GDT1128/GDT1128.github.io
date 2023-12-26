@@ -36,15 +36,17 @@ body{
 
 .header-row .menu li {
     text-align: center;
+    padding-top: 20px;
 }
 
 .header-row .menu li :hover{
-    color: red;
+    color: rgb(222, 99, 99);
+    
     
 }
 /*巢狀迴圈的 class樣式*/
 .header-row .menu a{
-    color: #16e4a3;
+    color: #14ef9b;
     display: block;
     gap: 20px;
 }
@@ -56,6 +58,7 @@ body{
 
 .header-row .menu .menu-item:hover .sub-menu{
     display: flex;
+    background-color: #bebaba5c;
 } 
 
 .header-row .menu .sub-menu{
@@ -86,7 +89,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(207, 5, 5, 0.058);
 }
 .p-1 .page-position{
     display: flex;
