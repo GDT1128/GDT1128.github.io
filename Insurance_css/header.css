@@ -7,7 +7,7 @@ body{
     position: fixed;
     height: 80px;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
 }
 
 .header-row .logo1{
@@ -60,7 +60,6 @@ body{
     display: flex;
     background-color: #bebaba5c;
 } 
-
 .header-row .menu .sub-menu{
     display: none;
     position: absolute;
@@ -322,3 +321,53 @@ body{
     margin-top: 10px;
 }
 
+.span-style::after{
+    content: "、";
+}
+
+.span-style:last-child::after{
+    display: none;
+}
+
+
+.p-3{
+    padding-top: 50px;
+    padding-left: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+.p-3 .slogan {
+    color: #fff;
+}
+
+.p-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.445);
+}
+
+.p-4{
+    padding-top: 50px;
+    padding-left: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+.p-4 .slogan {
+    color: #fff;
+}
+
+.p-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 137, 241, 0.419);
+}
