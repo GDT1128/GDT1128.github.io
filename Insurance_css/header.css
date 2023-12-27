@@ -58,7 +58,7 @@ body{
 
 .header-row .menu .menu-item:hover .sub-menu{
     display: flex;
-    background-color: #bebaba5c;
+    background-color: #f5f5f55c;
 } 
 .header-row .menu .sub-menu{
     display: none;
