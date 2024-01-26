@@ -37,22 +37,22 @@
             <div class="menu container">
                 <ul>
                     <li>
-                        <a href="https://web.cyut.edu.tw/bin/index.php?Lang=zh-tw" target="_blank">
+                        <a href="#index">
                             <div class="en">INDEX</div>
                             <div class="zh">首頁</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#ccc">
+                        <div style="color: #14ef9b;">
                             <div class="en">Courses</div>
                             <div class="zh">保險總覽
                                 <ul class="sub-menu">
-                                    <a href="#aaa">人身保險</a>
-                                    <a href="#bbb">財產保險</a>
-                                    <a href="#ccc">團險</a>
+                                    <a href="#person">人身保險</a>
+                                    <a href="#property">財產保險</a>
+                                    <a href="#group">團險</a>
                                 </ul>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -61,13 +61,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#investments">
                             <div class="en">investments</div>
                             <div class="zh">投資理財</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#question">
                             <div class="en">F&Q</div>
                             <div class="zh">常見問題</div>
                         </a>
@@ -77,7 +77,7 @@
         </div>
     </header>
 
-    <div class="page p-1">
+    <div class="page p-1" id="index">
         <div class="container">
             <div class="page-position">
                 <div class="F_page">
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <div class="page p-2" id="aaa">
+    <div class="page p-2" id="person">
         <h1 class="slogan">人身保險</h1>
         <div class="flow">
             <div class="flow-item">
@@ -137,7 +137,7 @@
     </div>
 
 
-    <div class="page p-3" id="bbb">
+    <div class="page p-3" id="property">
 
         <h1 class="slogan">財產保險</h1>
         <div class="flow">
@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    <div class="page p-4" id="ccc">
+    <div class="page p-4" id="group">
         <h1 class="slogan">團險</h1>
         <div class="flow">
             <div class="flow-item">
@@ -192,6 +192,58 @@
         </div>
     </div>
 
+    <div class="page p-5" id="investments">
+        <h1 class="slogan">投資理財</h1>
+
+    </div>
+    <!-- a-faq-faction 這是F&Q的區塊CSS名稱-->
+    <div class="page p-6" id="question">
+        <h1 class="slogan">常見問題</h1>
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction" onclick="toggleContent()">
+                <h5 class="a-faq-faction-number" >Q1</h5>
+                <div class="a-faq-faction-title">誰可以網路投保</div>
+                <i class="a-faq-faction-icon" ></i>
+            </div>
+            <div class="a-faq-faction-content a-faq-faction-open a-faq-faction-" id="menuContent">
+                <div class="a-faq-faction-txt-content">
+                    <div class="a-faq-faction-txt-answer">法令規定網路投保之要保人年齡資格限定為18歲以上，惟商品投保年齡視各商品規定，且須完成國泰人壽會員註冊始能投保。</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction">
+                <h5 class="a-faq-faction-number">Q2</h5>
+                <div class="a-faq-faction-title">受益人可以指定給誰</div>
+                <i class="a-faq-faction-icon"></i>
+            </div>
+        </div>
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction">
+                <h5 class="a-faq-faction-number">Q3</h5>
+                <div class="a-faq-faction-title">要保人、被保險人一定要同一人嗎？</div>
+                <i class="a-faq-faction-icon"></i>
+            </div>
+        </div>
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction">
+                <h5 class="a-faq-faction-number">Q4</h5>
+                <div class="a-faq-faction-title">投保「享安心五年定期壽險」或「享安心定期壽險」後可以進行保險金額變更嗎？</div>
+                <i class="a-faq-faction-icon"></i>
+            </div>
+        </div>
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction">
+                <h5 class="a-faq-faction-number">Q5</h5>
+                <div class="a-faq-faction-title">何謂保證續保?「享安心五年定期壽險」及「享安心定期壽險」有保證續保嗎？</div>
+                <i class="a-faq-faction-icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
     <footer class="footer">
@@ -202,13 +254,12 @@
                 </div>
             </div>
         </div>
-        </div>
-
-
     </footer>
 
 
 
 </body>
+
+<script src="/Insurance_js/index.js"></script>
 
 </html>

@@ -1,5 +1,6 @@
-body{
-    background: rgb(245, 245, 245);
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 
@@ -10,9 +11,9 @@ body{
     z-index: 4;
 }
 
-.header-row .logo1{
+.header-row .logo1 {
     width: 300px;
-    height:85px;
+    height: 85px;
     margin-top: -10px;
 }
 
@@ -39,28 +40,30 @@ body{
     padding-top: 20px;
 }
 
-.header-row .menu li :hover{
+.header-row .menu li :hover {
     color: rgb(222, 99, 99);
-    
-    
+
+
 }
+
 /*巢狀迴圈的 class樣式*/
-.header-row .menu a{
+.header-row .menu a {
     color: #14ef9b;
     display: block;
     gap: 20px;
 }
 
-.header-row .menu >ul{
+.header-row .menu>ul {
     display: flex;
     justify-content: center;
 }
 
-.header-row .menu .menu-item:hover .sub-menu{
+.header-row .menu .menu-item:hover .sub-menu {
     display: flex;
     background-color: #F5F5DC;
-} 
-.header-row .menu .sub-menu{
+}
+
+.header-row .menu .sub-menu {
     display: none;
     position: absolute;
     color: rgb(35, 90, 110);
@@ -84,14 +87,15 @@ body{
 }
 
 
-.p-1::before{
+.p-1::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(105, 105, 105, 0.233);
 }
-.p-1 .page-position{
+
+.p-1 .page-position {
     display: flex;
     align-items: center;
     height: 50%;
@@ -106,13 +110,14 @@ body{
     min-height: 300px;
 }
 
-.p-1 .page-row>div{
+.p-1 .page-row>div {
     width: 50%;
     padding: 20px;
 }
 
 .p-1 .page-row .left-side {
-    position: relative;/*產生線*/
+    position: relative;
+    /*產生線*/
 
 }
 
@@ -125,7 +130,8 @@ body{
     right: 0;
     border-right: 3px dashed #fff;
 }
-                        /*產生線*/
+
+/*產生線*/
 
 .slogan {
     text-align: center;
@@ -135,6 +141,7 @@ body{
     margin-bottom: 20px;
     position: relative;
 }
+
 .slogan::after {
     content: "";
     position: absolute;
@@ -143,52 +150,56 @@ body{
     width: 0;
     height: 3px;
     border-left: solid 100px #1072c2;
-    border-right: solid 180px #fff;
+    border-right: solid 180px #000000;
 }
 
- .content {
+.content {
     line-height: 26px;
     font-size: 0.9rem;
     text-align: center;
-} 
+}
 
-.p-1 .F_page{
-    
+.p-1 .F_page {
+
     width: 100%;
     display: flex;
     font-size: 3rem;
     border-radius: 10px;
     justify-content: space-between;
 }
-.p-1 .F_page .L_stock{
+
+.p-1 .F_page .L_stock {
     justify-content: center;
     align-items: center;
     color: #ff0000;
-   border: 1px solid #1f03f5;  
-   border-radius: 10px;
-   cursor: pointer;/*會變成超連結*/
+    border: 1px solid #1f03f5;
+    border-radius: 10px;
+    cursor: pointer;
+    /*會變成超連結*/
 
 }
-.p-1 .R_Insurance{
+
+.p-1 .R_Insurance {
     justify-content: center;
     align-items: center;
     color: #ff9d00;
     border: 1px solid #1f03f5;
     border-radius: 10px;
-    cursor: pointer;/*會變成超連結*/
+    cursor: pointer;
+    /*會變成超連結*/
 }
 
-.F1_page{
-display: flex;
+.F1_page {
+    display: flex;
 }
 
-.L_side{
-   flex: 2;
-   max-width: 200px;
-   margin-right: 400px;
+.L_side {
+    flex: 2;
+    max-width: 200px;
+    margin-right: 400px;
 }
 
-.R_side{
+.R_side {
     flex: 1;
 }
 
@@ -224,33 +235,36 @@ display: flex;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.4s;
-    
+
 }
 
 .form-button button:hover {
     background: rgb(255, 59, 45);
 }
 
-.footer{
+.footer {
     background: #dedede;
     font-size: 16px;
 }
-.footer-row .logo1{
+
+.footer-row .logo1 {
     width: 372px;
-    height:85px;
+    height: 85px;
     margin-top: -10px;
 }
-.footer-row{
+
+.footer-row {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
-.copyright{
-    font-size:0.9rem ;
+
+.copyright {
+    font-size: 0.9rem;
 }
 
-.p-2{
+.p-2 {
     padding-top: 50px;
     padding-left: 50px;
     background-image: url(../Insurance_images/image/money.jpg);
@@ -260,6 +274,8 @@ display: flex;
 
 .p-2 .slogan {
     color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .p-2::before {
@@ -282,7 +298,8 @@ display: flex;
 }
 
 .item-circle {
-    --r: 30px;  /*寫變數，之後調整方便*/
+    --r: 30px;
+    /*寫變數，之後調整方便*/
     width: var(--r);
     height: var(--r);
     border-radius: var(--r);
@@ -290,7 +307,8 @@ display: flex;
     position: relative;
     z-index: 2;
 }
-.flow-item{
+
+.flow-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,8 +322,9 @@ display: flex;
     position: absolute;
     top: 0;
     height: 100%;
-    border: 2px dashed #fff;
+    border: 2px dashed #363636;
 }
+
 .item-content {
     position: absolute;
     left: calc(50% + 50px);
@@ -319,16 +338,20 @@ display: flex;
 .item-content h2 {
     margin-bottom: 15px;
 }
-.flow-item:nth-child(even) .item-content{
+
+.flow-item:nth-child(even) .item-content {
     left: unset;
-    right: calc(50% + 50px);/*+前後要有空格*/
+    right: calc(50% + 50px);
+    /*+前後要有空格*/
 }
-.product-process{
+
+.product-process {
     display: flex;
-    
+
 }
-.goal-product{
-    --r:80px;
+
+.goal-product {
+    --r: 80px;
     display: flex;
     width: var(--r);
     height: var(--r);
@@ -337,12 +360,15 @@ display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 20px;
-    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.3);;
+    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    ;
 }
-.product-name{
+
+.product-name {
     font-size: 1.3rem;
     margin: 20px auto;
 }
+
 .product-name {
     font-size: 1.3rem;
     margin: 20px auto;
@@ -352,28 +378,30 @@ display: flex;
     display: flex;
     gap: 20px;
 }
-.project-count{
+
+.project-count {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.project-count-item{
+
+.project-count-item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
 
-.span-style::after{
+.span-style::after {
     content: "、";
 }
 
-.span-style:last-child::after{
+.span-style:last-child::after {
     display: none;
 }
 
 
-.p-3{
+.p-3 {
     padding-top: 50px;
     padding-left: 50px;
     background-size: cover;
@@ -381,7 +409,9 @@ display: flex;
 }
 
 .p-3 .slogan {
-    color: #fff;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .p-3::before {
@@ -391,10 +421,10 @@ display: flex;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(181, 147, 147, 0.445);
+    background: rgba(205, 205, 205, 0.445);
 }
 
-.p-4{
+.p-4 {
     padding-top: 50px;
     padding-left: 50px;
     background-size: cover;
@@ -402,7 +432,9 @@ display: flex;
 }
 
 .p-4 .slogan {
-    color: #fff;
+    color: #030303;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .p-4::before {
@@ -412,5 +444,115 @@ display: flex;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(148, 179, 241, 0.419);
+    background: rgba(205, 205, 205, 0.445);
+}
+
+.p-5 {
+    padding-top: 50px;
+    padding-left: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+.p-5 .slogan {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.p-5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 134, 134, 0.445);
+}
+
+.p-6 {
+    padding-top: 50px;
+    padding-left: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+
+.p-6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.419);
+}
+
+.p-6 .slogan {
+    color: #FFF;
+    font-size: 3rem;
+    background:linear-gradient(to right,transparent,#67b77e);
+    font-weight: 400;
+}
+
+
+.a-faq-faction-container{
+    max-width: 800px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin-top: 20px;
+    background:linear-gradient(to right,transparent,#dedede88);
+}
+
+
+
+.a-faq-faction {
+    display: flex;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+}
+
+.a-faq-faction:hover{
+    background: #adeb7d;
+}
+
+.a-faq-faction-number {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0 25px 0 0;
+    display: inline-block;
+    background-image: linear-gradient(to right, #87cb82 -12%, #67b77e 110%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.a-faq-faction-title {
+    padding-right: 15px;
+    flex: 1;
+}
+
+.a-faq-faction-icon::before{
+    content: url(../Insurance_images/image/menu_icon.svg);
+}
+
+/* 隱藏式選單 */
+.a-faq-faction-content{
+    display: none;
+    padding: 10px;
+}
+
+.active{
+    display: block;
+}
+
+.a-faq-faction-content .a-faq-faction-open .a-faq-faction-icon::after{
+    content: url(/Insurance_images/image/hide_icon.svg);
 }
