@@ -519,7 +519,8 @@ body {
 }
 
 .a-faq-faction:hover{
-    background: #adeb7d;
+    background: #adeb7dbb;
+    transition: 0.5s;
 }
 
 .a-faq-faction-number {
@@ -543,16 +544,101 @@ body {
     content: url(../Insurance_images/image/menu_icon.svg);
 }
 
-/* 隱藏式選單 */
-.a-faq-faction-content{
-    display: none;
-    padding: 10px;
-}
-
-.active{
-    display: block;
-}
-
 .a-faq-faction-content .a-faq-faction-open .a-faq-faction-icon::after{
     content: url(/Insurance_images/image/hide_icon.svg);
+}
+
+.a-faq-faction-txt-answer{
+    display: none;
+}
+
+.main-nav-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-wrap .page-tab {
+    flex: 2;
+}
+
+.page-tab .tabs {
+    display: flex;
+    gap: 25px;
+}
+
+.page-tab .tabs li {
+    position: relative;
+}
+
+.page-tab .tabs li::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: -4px;
+    width: 0;
+    background: #4cc764;
+    height: 2px;
+    transition: 0.3s;
+}
+
+.page-tab .tabs li.active::after {
+    width: calc(100% + 8px);
+}
+
+.page-tab .tabs li a::after {
+    content: attr(data-count);
+    font-size: 0.8rem;
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+
+.main-nav-wrap .donate-wrap {
+    flex: 1;
+}
+
+.donate-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.donate-wrap .like-btn {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #43946c;
+    border-radius: 4px;
+    color: #43946c;
+    transition: 0.3s;
+}
+
+
+.donate-wrap .like-btn:hover {
+    border-color: #55b987;
+    color: #55b987;
+}
+
+.donate-wrap .like-btn .material-symbols-outlined {
+    color: inherit;
+}
+
+.donate-wrap .donate-btn {
+    flex: 1;
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #43946c;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.donate-wrap .donate-btn:hover {
+    background-color: #55b987;
 }
