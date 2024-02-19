@@ -28,17 +28,18 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-   <!-- AOS的動畫連接 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- AOS的動畫連接 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- 專題的JS連接 -->
     <script src="/Insurance_js/jquery.min.js"></script>
     <!-- 檢查網站 -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "l43g36mbto");
     </script>
 </head>
@@ -69,10 +70,15 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="menu-item">
                         <a href="#">
                             <div class="en">Hit me</div>
-                            <div class="zh">智慧服務</div>
+                            <div class="zh">智慧服務
+                                <ul class="sub-menu">
+                                    <a href="stock.html">股票專區</a>
+                                    <a href="Insurance.html">保險專區</a>
+                                </ul>
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -92,26 +98,26 @@
         </div>
     </header>
 
-    <div class="page p-1"  id="index">
+    <div class="page p-1" id="index">
         <div class="container" data-aos="fade-down">
             <div class="page-position">
                 <div class="F_page">
-                    <div class="L_stock">股票投資</div>
+                    <a href="stock.html">股票專區</a>
                     <div class="triangle-container">
                         <div class="triangle">
                             <div>股票</div>
                             <div>保險</div>
                             <div>年金</div>
                         </div>
-                        
-                      </div>
-                    <div class="R_Insurance">保險專區</div>
+                    </div>
+                    <a href="Insurance.html"class="aa">保險專區</a>
                 </div>
             </div>
             <div class="F1_page">
                 <div class="L_side">已經擁有基本的理財觀念，那麼要挑戰中高階難度的嗎?歡迎進入股票世界，我們將告訴您如何錢滾錢以及可存在的風險</div>
                 <div class="R_side">手上擁有太多錢財不知道如何處理嗎?現在了解保險對您未來的生活有保障</div>
             </div>
+
         </div>
     </div>
 
@@ -219,33 +225,35 @@
     <!-- a-faq-faction 這是F&Q的區塊CSS名稱-->
     <div class="page p-6" id="question">
         <h1 class="slogan">常見問題</h1>
-        <div class="a-faq-faction-container" >
+        <div class="a-faq-faction-container">
             <div class="a-faq-faction " id="a-faq-faction-q1">
                 <h5 class="a-faq-faction-number">Q1</h5>
                 <div class="a-faq-faction-title">誰可以網路投保</div>
                 <i class="a-faq-faction-icon"></i>
             </div>
-            <div class="a-faq-faction-content a-faq-faction-open" >
+            <div class="a-faq-faction-content a-faq-faction-open">
                 <div class="a-faq-faction-txt-content">
-                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a1">法令規定網路投保之要保人年齡資格限定為18歲以上，惟商品投保年齡視各商品規定，且須完成國泰人壽會員註冊始能投保。</div>
+                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a1">
+                        法令規定網路投保之要保人年齡資格限定為18歲以上，惟商品投保年齡視各商品規定，且須完成國泰人壽會員註冊始能投保。</div>
                 </div>
             </div>
 
         </div>
         <div class="a-faq-faction-container">
-            <div class="a-faq-faction "  id="a-faq-faction-q2">
+            <div class="a-faq-faction " id="a-faq-faction-q2">
                 <h5 class="a-faq-faction-number">Q2</h5>
                 <div class="a-faq-faction-title">受益人可以指定給誰</div>
                 <i class="a-faq-faction-icon"></i>
             </div>
             <div class="a-faq-faction-content a-faq-faction-open">
                 <div class="a-faq-faction-txt-content">
-                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a2">法令規定網路投保之要保人年齡資格限定為18歲以上，惟商品投保年齡視各商品規定，且須完成國泰人壽會員註冊始能投保。</div>
+                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a2">
+                        法令規定網路投保之要保人年齡資格限定為18歲以上，惟商品投保年齡視各商品規定，且須完成國泰人壽會員註冊始能投保。</div>
                 </div>
             </div>
         </div>
-        <div class="a-faq-faction-container" >
-            <div class="a-faq-faction "id="a-faq-faction-q3">
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction " id="a-faq-faction-q3">
                 <h5 class="a-faq-faction-number">Q3</h5>
                 <div class="a-faq-faction-title">要保人、被保險人一定要同一人嗎？</div>
                 <i class="a-faq-faction-icon"></i>
@@ -256,33 +264,37 @@
                 </div>
             </div>
         </div>
-        <div class="a-faq-faction-container" >
-            <div class="a-faq-faction "id="a-faq-faction-q4">
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction " id="a-faq-faction-q4">
                 <h5 class="a-faq-faction-number">Q4</h5>
                 <div class="a-faq-faction-title">投保「享安心五年定期壽險」或「享安心定期壽險」後可以進行保險金額變更嗎？</div>
                 <i class="a-faq-faction-icon"></i>
             </div>
-            <div class="a-faq-faction-content a-faq-faction-open " >
+            <div class="a-faq-faction-content a-faq-faction-open ">
                 <div class="a-faq-faction-txt-content">
                     <div class="a-faq-faction-txt-answer" id="a-faq-faction-a4">僅可辦理減少保險金額，減額後的保險金額，不得低於本保險最低承保金額</div>
                 </div>
             </div>
         </div>
-        <div class="a-faq-faction-container" >
-            <div class="a-faq-faction "id="a-faq-faction-q5">
+        <div class="a-faq-faction-container">
+            <div class="a-faq-faction " id="a-faq-faction-q5">
                 <h5 class="a-faq-faction-number">Q5</h5>
                 <div class="a-faq-faction-title">何謂保證續保?「享安心五年定期壽險」及「享安心定期壽險」有保證續保嗎？</div>
                 <i class="a-faq-faction-icon"></i>
             </div>
-            <div class="a-faq-faction-content a-faq-faction-open " >
+            <div class="a-faq-faction-content a-faq-faction-open ">
                 <div class="a-faq-faction-txt-content">
-                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a5">1.保證續保：保險期間屆滿時，要保人得交付續保保險費，以逐年使本契約繼續有效，本公司不得拒絕續保。 本契約續保時，按續保生效當時依規定陳報主管機關之費率及被保險人年齡重新計算保險費，但不得針對個別被保險人身體狀況調整之。要保人如不同意該調整後之保險費或不同意續保者，應於本契約保險期間屆滿前，以書面或其他約定方式通知本公司，本契約保險效力自保險期間屆滿後即行終止。<p style="padding-top :10px;;">2.「享安心五年定期壽險」提供保證續保，且被保險人之最高續保年齡為66歲。「享安心定期壽險」20年期及70歲滿期不可續保。</div>
+                    <div class="a-faq-faction-txt-answer" id="a-faq-faction-a5">
+                        1.保證續保：保險期間屆滿時，要保人得交付續保保險費，以逐年使本契約繼續有效，本公司不得拒絕續保。
+                        本契約續保時，按續保生效當時依規定陳報主管機關之費率及被保險人年齡重新計算保險費，但不得針對個別被保險人身體狀況調整之。要保人如不同意該調整後之保險費或不同意續保者，應於本契約保險期間屆滿前，以書面或其他約定方式通知本公司，本契約保險效力自保險期間屆滿後即行終止。
+                        <p style="padding-top :10px;;">2.「享安心五年定期壽險」提供保證續保，且被保險人之最高續保年齡為66歲。「享安心定期壽險」20年期及70歲滿期不可續保。
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
 
 
 
@@ -297,33 +309,33 @@
         </div>
     </footer>
 
-<!-- AOS的動畫 -->
+    <!-- AOS的動畫 -->
     <script>
         AOS.init({
-            duration:3000,
+            duration: 3000,
         });
-      </script>
+    </script>
 </body>
 
 <script>
-    $(document).ready(function(){
-        $("#a-faq-faction-q1").click(function(){
+    $(document).ready(function () {
+        $("#a-faq-faction-q1").click(function () {
             $("#a-faq-faction-a1").slideToggle(1000);
         });
 
-        $("#a-faq-faction-q2").click(function(){
+        $("#a-faq-faction-q2").click(function () {
             $("#a-faq-faction-a2").slideToggle(1000);
         });
 
-        $("#a-faq-faction-q3").click(function(){
+        $("#a-faq-faction-q3").click(function () {
             $("#a-faq-faction-a3").slideToggle(1000);
         });
 
-        $("#a-faq-faction-q4").click(function(){
+        $("#a-faq-faction-q4").click(function () {
             $("#a-faq-faction-a4").slideToggle(1000);
         });
 
-        $("#a-faq-faction-q5").click(function(){
+        $("#a-faq-faction-q5").click(function () {
             $("#a-faq-faction-a5").slideToggle(1000);
         });
 

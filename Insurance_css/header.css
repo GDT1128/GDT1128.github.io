@@ -18,7 +18,7 @@ body {
 }
 
 .header-row {
-    background: #fff;
+    background: rgb(255, 255, 255);
     height: 100%;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(105, 105, 105, 0.233);
+    background:linear-gradient(to right,#0a02f7bd 45%,#ff0000a3 50%);
 }
 
 .p-1 .page-position {
@@ -172,23 +172,19 @@ body {
     align-items: center;
 }
 
-.p-1 .F_page .L_stock {
+.p-1 .F_page a {
+    display: block;
     justify-content: center;
     align-items: center;
     color: #ff0000;
-    border: 1px solid #1f03f5;
-    border-radius: 10px;
     cursor: pointer;
     /*會變成超連結*/
-
 }
 
-.p-1 .R_Insurance {
+.p-1 .F_page .aa {
     justify-content: center;
     align-items: center;
-    color: #ff9d00;
-    border: 1px solid #1f03f5;
-    border-radius: 10px;
+    color: #0011ff;
     cursor: pointer;
     /*會變成超連結*/
 }
@@ -206,10 +202,13 @@ img{
     flex: 2;
     max-width: 200px;
     margin-right: 400px;
+   font-size: 1.5rem;
 }
 
 .R_side {
     flex: 1;
+    font-size: 1.5rem;
+
 }
 
 /*footer的CSS*/
@@ -428,9 +427,10 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    background: rgba(205, 205, 205, 0.445);
+    background-image: url(../Insurance_images/image/p-2.jpg);
+    background-size: auto 95%;
 }
 
 .p-4 {
@@ -664,7 +664,7 @@ img{
     height: 0;
     border-left: 156px solid transparent;
     border-right: 159px solid transparent;
-    border-bottom: 228px solid #9feb53; /* 可根据需要更改颜色 */
+    border-bottom: 228px solid rgba(255, 255, 0, 0.83); /* 可根据需要更改颜色 */
     position: absolute;
     top: 0;
     left: 0;
@@ -675,7 +675,7 @@ img{
   
   .triangle div {
     margin: 5px 0; /* 调整段落之间的间距 */
-    color: #ffffff; /* 可根据需要更改文字颜色 */
+    color: #070707; /* 可根据需要更改文字颜色 */
     position: absolute;
     width: 100px;
 }
