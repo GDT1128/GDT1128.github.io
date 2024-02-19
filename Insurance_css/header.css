@@ -162,10 +162,14 @@ body {
 .p-1 .F_page {
 
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     font-size: 3rem;
     border-radius: 10px;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 .p-1 .F_page .L_stock {
@@ -187,6 +191,11 @@ body {
     border-radius: 10px;
     cursor: pointer;
     /*會變成超連結*/
+}
+
+img{
+    width: 100%;
+    margin-top: 80px ;
 }
 
 .F1_page {
@@ -642,3 +651,61 @@ body {
 .donate-wrap .donate-btn:hover {
     background-color: #55b987;
 }
+
+/* 三角形 */
+
+.p-1 .F_page .triangle-container {
+    position: relative;
+    width: 100px;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 156px solid transparent;
+    border-right: 159px solid transparent;
+    border-bottom: 228px solid #9feb53; /* 可根据需要更改颜色 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .triangle div {
+    margin: 5px 0; /* 调整段落之间的间距 */
+    color: #ffffff; /* 可根据需要更改文字颜色 */
+    position: absolute;
+    width: 100px;
+}
+  
+  .triangle div:nth-child(1) {
+    top: 50px; /* 调整第一行文字的位置 */
+    font-size: 1.35rem;
+
+  }
+  
+  .triangle div:nth-child(2) {
+    top: 103px; /* 调整第二行文字的位置 */
+    font-size: 1.8rem;
+
+  }
+  
+  .triangle div:nth-child(3) {
+    top: 165px; /* 调整第三行文字的位置 */
+    font-size: 2.5rem;
+    justify-content: space-between;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
