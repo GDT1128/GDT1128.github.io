@@ -721,20 +721,21 @@ img{
   
   .triangle div:nth-child(1) {
     top: 50px; /* 调整第一行文字的位置 */
-    font-size: 1.35rem;
-
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   
   .triangle div:nth-child(2) {
     top: 103px; /* 调整第二行文字的位置 */
-    font-size: 1.8rem;
-
+    font-size: 1.3rem;
+    font-weight: 700;
   }
   
   .triangle div:nth-child(3) {
     top: 165px; /* 调整第三行文字的位置 */
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     justify-content: space-between;
+    font-weight: 700;
   }
 
   @keyframes bounce {
