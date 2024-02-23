@@ -38,6 +38,7 @@ body {
 .header-row .menu li {
     text-align: center;
     padding-top: 20px;
+    color: #9acfa9;
 }
 
 .header-row .menu li :hover {
@@ -47,8 +48,8 @@ body {
 }
 
 /*巢狀迴圈的 class樣式*/
-.header-row .menu a {
-    color: #14ef9b;
+.header-row .menu ul>a {
+    color: #58e52d;
     display: block;
     gap: 20px;
 }
@@ -97,7 +98,8 @@ body {
     height: 100%;
     width: 100%;
     background:linear-gradient(to right,#87CEFA 50%,#98FB98 50%);
-    /* background:linear-gradient(to left,transparent,#0a02f7bd); */
+   
+
 
 }
 
@@ -257,6 +259,7 @@ img{
 .footer {
     background: #dedede;
     font-size: 16px;
+   
 }
 
 .footer-row .logo1 {
@@ -473,6 +476,38 @@ img{
     font-weight: 400;
 }
 
+
+
+
+
+.p-5 .wrap{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 5fr;
+}
+
+.wrap > div{
+    width: 50%;
+    margin-bottom: 30px;
+    padding:12px;
+    font-weight: 700;
+}
+
+.wrap > span{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+.wrap .age{
+    background: #9acfa9;
+    border-radius: 60px;
+    width: 50%;
+    margin-bottom: 30px;
+    padding:12px;
+}
+
 .p-5::before {
     content: "";
     position: absolute;
@@ -480,7 +515,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(135, 134, 134, 0.445);
+    background: rgba(201, 201, 201, 0.233);
 }
 
 .p-6 {
@@ -565,7 +600,7 @@ img{
     display: none;
 }
 
-.main-nav-wrap {
+/* .main-nav-wrap {
     height: 100%;
     display: flex;
     align-items: center;
@@ -654,7 +689,7 @@ img{
 
 .donate-wrap .donate-btn:hover {
     background-color: #55b987;
-}
+} */
 
 /* 三角形 */
 
@@ -666,8 +701,8 @@ img{
   .triangle {
     width: 0;
     height: 0;
-    border-left: 156px solid transparent;
-    border-right: 159px solid transparent;
+    border-left: 123px solid transparent;
+    border-right: 123px solid transparent;
     border-bottom: 228px solid rgba(255, 255, 0, 0.83); /* 可根据需要更改颜色 */
     position: absolute;
     top: 0;
@@ -712,4 +747,21 @@ img{
     60% {
       transform: translateY(-10px);
     }
+  }
+
+
+/*滑動按鈕的樣式*/
+
+#scrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 40px;
+    background-color: #6b7074c9;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 1.1rem;
   }

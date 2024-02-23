@@ -67,3 +67,21 @@ function hideSubMenu(element) {
     });
 }
 
+//滾動到最上層
+
+    function scrollToTop(){
+        window.scroll({
+            top:0,
+            behavior:"smooth"//平滑
+        });
+    }
+
+//監聽事件，以判斷隱藏或顯示
+window.addEventListener('scroll', function() {
+    var scrollTopButton = document.getElementById('scrollTopButton');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopButton.style.display = 'block';
+    } else {
+      scrollTopButton.style.display = 'none';
+    }
+  });
