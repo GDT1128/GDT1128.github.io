@@ -1,0 +1,39 @@
+.container-ALL{
+    display: flex;
+    align-items: stretch;
+}
+
+/*側邊欄*/
+#sidebar{
+    width: 250px;
+    height: 100vh;
+    background: #e4e4e4;
+    transition: 1s;
+}
+
+#sidebar.active{
+    margin-left: -200px;
+}
+
+/*圖片大小*/
+.header .logo1 {
+    width: 300px;
+    height: 85px;
+    margin-top: -10px;
+}
+
+/*縮放按鈕*/
+.collapse-btn{
+    position: relative;
+    top: 1%;
+    left: 200px;
+    border: none;
+    background: #e4e4e4;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.collapse-btn:hover{
+    background: #999898;
+    transition: 0.4s;
+}
