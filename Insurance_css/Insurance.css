@@ -37,3 +37,24 @@
     background: #999898;
     transition: 0.4s;
 }
+
+/*下方輸入框樣式*/
+.chat-all{
+    background: #f7f7f7;
+    margin-left: 200px;
+    margin-top: 400px;
+    border: 1px solid #000000;
+    border-radius: 80px;
+    width: 800px;
+    padding: 20px;
+}
+
+.chat-input{
+    color: #000000;
+   
+}
+
+.fa-paper-plane{
+    position: relative;
+    left: 725px;
+}

@@ -1,4 +1,4 @@
-
+//側邊欄收放
 
 $(document).ready(function(){
 
@@ -12,3 +12,89 @@ $(document).ready(function(){
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+navigator.geolocation.getCurrentPosition(function(position) {
+    // 使用位置資訊
+  });
+  
