@@ -40,11 +40,10 @@
 
 /*下方輸入框樣式*/
 .chat-all{
-    background: #f7f7f7;
+    display: flex;
     margin-left: 200px;
-    margin-top: 400px;
-    border: 1px solid #000000;
-    border-radius: 80px;
+    margin-top: 550px;
+    border: 1px solid #fff;
     width: 800px;
     padding: 20px;
 }
@@ -54,7 +53,23 @@
    
 }
 
-.fa-paper-plane{
-    position: relative;
-    left: 725px;
+#chat-user-input{
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #e6e5e5;
+    resize: none;
+    border-radius: 999px; /* 橫向橢圓形 */
+
+}
+
+#send-btn {
+    background-color: rgb(3, 86, 154);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 999px; /* 橫向橢圓形 */
 }

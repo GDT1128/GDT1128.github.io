@@ -59,8 +59,6 @@
                 <!-- 導覽列按鈕 -->
                 <button type="button" id="collapse" class="collapse-btn">
                     <i class="fa-solid fa-align-left"></i>
-
-
                 </button>
 
 
@@ -89,13 +87,14 @@
                     <img class="logo1" src="https://web.cyut.edu.tw/var/file/0/1000/img/logo.svg" alt="LOGO">
                 </div>
             </header>
-           <!-- 下方輸入框 -->
-                <div  class="chat-all">
-                    <div class="chat-input">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </div>
+            <!-- 下方輸入框 -->
+            <div id="user-input-container">
+               <div class="chat-all">
+                    <textarea  id="chat-user-input" cols="85" rows="1" placeholder="請輸入資訊"></textarea>
+                    <button id="send-btn" ><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
-            
+            </div>
+
         </div>
     </div>
 </body>
