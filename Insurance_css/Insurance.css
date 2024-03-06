@@ -42,7 +42,7 @@
 .chat-all{
     display: flex;
     margin-left: 200px;
-    margin-top: 550px;
+    margin-top: 400px;
     border: 1px solid #fff;
     width: 800px;
     padding: 20px;
@@ -73,3 +73,53 @@
     padding: 20px;
     border-radius: 999px; /* 橫向橢圓形 */
 }
+
+
+/*聊天者*/
+
+.chatapp{
+    display: flex;    
+}
+.chat-logo{
+    border-radius: 9999px;
+    border: 1px solid #0ff;
+    width: 80px;
+    height: 80px;
+    background:#0ff;
+    margin-left: 200px;
+}
+
+.chat-text{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;   
+    padding-left: 20px;
+}
+
+/*底部按鈕*/
+
+#sidebar {
+    position: relative;
+}
+
+.nav-btn {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    margin: 0;
+    padding: 0;
+    justify-content: content;
+    width: 100%;
+}
+
+.nav-btn li {
+    padding: 15px;
+}
+
+
+
+  
+
+
+
+
