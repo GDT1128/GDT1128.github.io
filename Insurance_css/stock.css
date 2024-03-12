@@ -1,0 +1,125 @@
+.container-ALL{
+    display: flex;
+    align-items: stretch;
+}
+
+/*側邊欄*/
+#sidebar{
+    width: 250px;
+    height: 100vh;
+    background: #e4e4e4;
+    transition: 1s;
+}
+
+#sidebar.active{
+    margin-left: -200px;
+}
+
+/*圖片大小*/
+.header .logo1 {
+    width: 300px;
+    height: 85px;
+    margin-top: -10px;
+}
+
+/*縮放按鈕*/
+.collapse-btn{
+    position: relative;
+    top: 1%;
+    left: 200px;
+    border: none;
+    background: #e4e4e4;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.collapse-btn:hover{
+    background: #999898;
+    transition: 0.4s;
+}
+
+/*下方輸入框樣式*/
+.chat-all{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 400px;
+    border: 1px solid #fff;
+    width: 800px;
+    padding: 20px;
+}
+
+.chat-input{
+    color: #000000;
+   
+}
+
+#chat-user-input{
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #e6e5e5;
+    resize: none;
+    border-radius: 999px; /* 橫向橢圓形 */
+
+}
+
+#send-btn {
+    background-color: rgb(3, 86, 154);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 999px; /* 橫向橢圓形 */
+}
+
+
+/*聊天者*/
+
+.chatapp{
+    display: flex;    
+}
+.chat-logo{
+    border-radius: 9999px;
+    border: 1px solid #0ff;
+    width: 80px;
+    height: 80px;
+    background:#0ff;
+    margin-left: 200px;
+}
+
+.chat-text{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;   
+    padding-left: 20px;
+}
+
+/*底部按鈕*/
+
+#sidebar {
+    position: relative;
+}
+
+.nav-btn {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    margin: 0;
+    padding: 0;
+    justify-content: content;
+    width: 100%;
+}
+
+.nav-btn li {
+    padding: 15px;
+}
+
+
+
+  
+
+
+
+
