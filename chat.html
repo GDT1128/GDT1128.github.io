@@ -202,7 +202,7 @@
                 
             }
         });
-
+        //時間
         function getCurrentTime() {
             const now = new Date();
             const hours = now.getHours().toString().padStart(2, '0');
@@ -268,7 +268,7 @@
             chatContainer.appendChild(messageContainer);
             scrollToBottom();
         }
-
+        
         function sendMessage() {
             const userMessage = userInput.value;
             if (userMessage.trim() === '') {
