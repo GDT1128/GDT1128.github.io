@@ -64,7 +64,7 @@
         .bot-message-icon {
             background-color: orange; 
             /* 橘色 */
-            background-image: url(IMG/一坨熊貓_2.jpg);
+            /*background-image: url(IMG/一坨熊貓_2.jpg);*/
 
             width: 50px;
         }
@@ -176,10 +176,10 @@
             <div class="message-content bot-message-content">✈️ 想實現夢想，就差一筆資金嗎？
                 朝陽貸你夢想起飛，信貸首期年利率0.01%，營業時間最快1小時撥款</div>
         </div>
-        <!-- <div class="message-container-2">
+        <div class="message-container-2">
             <div class="message-content user-message-content">This is a user message that is aligned to the right.</div>
             <div class="message-icon user-message-icon"></div>
-        </div> -->
+        </div>
     </div>
 
     <div id="user-input-container">
@@ -228,12 +228,12 @@
 
 
             
-            if (isUser ==true){
+            if (isUser == true){
                 const messageTime = document.createElement('div');
                 messageTime.classList.add('message-time');
                 messageTime.innerText = getCurrentTime();
                 messageContainer.appendChild(messageTime);
-} 
+            }      
             const messageContent = document.createElement('div');
             messageContent.classList.add('message-content');
             messageContent.classList.add(isUser ? 'user-message-content' : 'bot-message-content');
@@ -255,7 +255,7 @@
                 messageContainer.appendChild(messageTime);
                 var container = document.documentElement || document.body;
                 container.scrollTop = container.scrollHeight;
-} 
+            } 
             // const messageTime = document.createElement('div');
             // // messageTime.classList.add('message-time');
             // messageTime.classList.add('message-time');
