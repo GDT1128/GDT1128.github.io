@@ -104,7 +104,7 @@ $(document).ready(function(){
     
 
     function getResponse(userMessage) {
-        return `${userMessage} !`;
+        return `${userMessage}`;
     }
 
     //滾動

@@ -6,10 +6,22 @@
 /*側邊欄*/
 #sidebar{
     width: 250px;
-    height: 100vh;
+    height: 100%;/*要調整*/
     background: #e4e4e4;
     transition: 1s;
+    /* overflow-y: auto; */
 }
+
+
+
+/* .flex{
+    display: flex;
+} */
+
+.flexd{
+    flex-direction:column ;
+}
+
 
 #sidebar.active{
     margin-left: -200px;
@@ -117,26 +129,17 @@
 /*機器人*/
 
 
-
-
-
-
 .bot-message-icon{
     background-color: #33eee2;
 }
 
 .bot-message-content{
-    text-align: left; /* 对齐方式 */
     color: #000000;
 }
 
 
 
 /*使用者*/
-
-
-
-
 
 .message-container-2 {
     display: flex;
@@ -190,3 +193,12 @@
 
 
 
+/*時間樣式*/
+
+.message-time {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #777;
+    margin-right: 30px;
+    
+}
