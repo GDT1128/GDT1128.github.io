@@ -1,3 +1,17 @@
+
+
+const chatContainer = document.getElementById('chat-container')
+const elBtn = document.getElementById('send-btn'); // Remove the '#' before 'send-btn'
+const elInput = document.querySelector('#chat-user-input'); // Add a dot before 'chat-user-input' to select by class
+
+
+
+
+
+
+
+
+
 //側邊欄收放
 
 $(document).ready(function(){
@@ -15,14 +29,13 @@ $(document).ready(function(){
 
 //按鈕
         
-    const chatContainer = document.getElementById('chat-container')
-    const elBtn = document.getElementById('send-btn'); // Remove the '#' before 'send-btn'
-    const elInput = document.querySelector('#chat-user-input'); // Add a dot before 'chat-user-input' to select by class
+   
     
     elBtn.addEventListener('click', sendMessage);
     
     elInput.addEventListener('keyup', (e) => { 
         if (e.key.toString().toUpperCase() == 'ENTER' && !e.shiftKey) {
+          
             sendMessage();
             e.preventDefault(); // 防止插入新行
             var container = document.documentElement || document.body;
