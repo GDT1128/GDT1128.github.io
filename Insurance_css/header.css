@@ -217,7 +217,7 @@ img{
 
 }
 
-/*footer的CSS*/
+
 
 .form-item {
     margin-bottom: 15px;
@@ -255,6 +255,8 @@ img{
 .form-button button:hover {
     background: rgb(255, 59, 45);
 }
+
+/*footer的CSS*/
 
 .footer {
     background: #dedede;

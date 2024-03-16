@@ -1,42 +1,59 @@
 .container-ALL{
     display: flex;
     align-items: stretch;
+    
 }
 
 /*側邊欄*/
 #sidebar{
     width: 250px;
-    height: 100%;/*要調整*/
+    height:calc(100% - 20px);/*要調整*/
     background: #e4e4e4;
     transition: 1s;
-    /* overflow-y: auto; */
 }
 
-
-
-/* .flex{
-    display: flex;
-} */
-
-.flexd{
-    flex-direction:column ;
+.flex-col{
+    flex-direction: column;
 }
 
+.w-full{
+    width: 100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.flex{
+    display:flex ;
+}
 
 #sidebar.active{
     margin-left: -200px;
 }
 
+.pt-2{
+    padding-top: 0.5rem;
+}
+
+/*固定圖片*/
+
+.header{
+    position: fixed;
+    z-index: 4;
+}
+
+
 /*圖片大小*/
 .header .logo1 {
-    width: 300px;
+    width: 250px;
     height: 85px;
     margin-top: -10px;
 }
 
 /*縮放按鈕*/
 .collapse-btn{
-    position: relative;
+    position: absolute;
     top: 1%;
     left: 200px;
     border: none;
@@ -87,7 +104,7 @@
 }
 
 
-/*底部按鈕*/
+/*側邊欄底部按鈕*/
 
 #sidebar {
     position: relative;
@@ -107,6 +124,8 @@
     padding: 15px;
 }
 
+
+
 /*聊天版圖*/
 #chat-container {
     flex: 1;
@@ -117,6 +136,8 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 250px;
+    margin-top: 60px;
+
 }
 
 .message-container {
@@ -201,4 +222,34 @@
     color: #777;
     margin-right: 30px;
     
+}
+
+
+/*footer的樣式*/
+
+.footer {
+    background: #dedede;
+    font-size: 16px;
+    width: calc(100% - 700px);
+    margin-left: auto;/*讓width在中間*/
+    margin-right: auto;
+}
+
+.footer-row .logo1 {
+    width: 372px;
+    height: 85px;
+    margin-top: -10px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    text-align: center;
+ 
 }
