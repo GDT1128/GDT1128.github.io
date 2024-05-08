@@ -91,29 +91,33 @@
                 </div>
             </header>
 
-           
-                <div id="chat-container">
-                    <div class="message-container">
-                        <div class="message-icon bot-message-icon"></div>
-                        <div class="chat-text">
-                            你好! 歡迎來到聊天室，請輸入想知道的問題?
-                        </div>
+
+            <div id="chat-container">
+                <div class="message-container">
+                    <div class="message-icon bot-message-icon"></div>
+                    <div class="chat-text">
+                        你好! 歡迎來到聊天室，請輸入想知道的問題?
                     </div>
-                    <!-- <div class="message-container-2">
+                </div>
+                <!-- <div class="message-container-2">
                         <div class="message-content user-message-content" >This is cat</div>
                         <div class="message-icon user-message-icon"></div>
                     </div> -->
 
-                </div>
+            </div>
 
 
 
-            <!-- 下方輸入框 -->
+            <!-- 下方輸入框 傳送 語音-->
             <div id="user-input-container">
                 <div class="chat-all">
                     <textarea id="chat-user-input" cols="85" rows="1" placeholder="請輸入資訊"></textarea>
                     <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    <input id="toggle" type="button" value="Start Speech Recognition"
+                        onclick="toggleSpeechRecognition();" />
+
                 </div>
+
             </div>
 
         </div>

@@ -1,44 +1,45 @@
-.container-ALL{
+.container-ALL {
     display: flex;
     align-items: stretch;
-    
+
 }
 
 /*側邊欄*/
-#sidebar{
+#sidebar {
     width: 250px;
-    height:calc(100% - 20px);/*要調整*/
+    height: calc(100% - 20px);
+    /*要調整*/
     background: #e4e4e4;
     transition: 1s;
 }
 
-.flex-col{
+.flex-col {
     flex-direction: column;
 }
 
-.w-full{
+.w-full {
     width: 100%;
 }
 
-.h-full{
+.h-full {
     height: 100%;
 }
 
-.flex{
-    display:flex ;
+.flex {
+    display: flex;
 }
 
-#sidebar.active{
+#sidebar.active {
     margin-left: -200px;
 }
 
-.pt-2{
+.pt-2 {
     padding-top: 0.5rem;
 }
 
 /*固定圖片*/
 
-.header{
+.header {
     position: fixed;
     z-index: 4;
 }
@@ -52,7 +53,7 @@
 }
 
 /*縮放按鈕*/
-.collapse-btn{
+.collapse-btn {
     position: absolute;
     top: 1%;
     left: 200px;
@@ -62,13 +63,13 @@
     padding: 5px;
 }
 
-.collapse-btn:hover{
+.collapse-btn:hover {
     background: #999898;
     transition: 0.4s;
 }
 
 /*下方輸入框樣式*/
-.chat-all{
+.chat-all {
     display: flex;
     margin-left: 200px;
     margin-top: 400px;
@@ -77,12 +78,12 @@
     padding: 20px;
 }
 
-.chat-input{
+.chat-input {
     color: #000000;
-   
+
 }
 
-#chat-user-input{
+#chat-user-input {
     flex: 1;
     padding: 20px;
     border: none;
@@ -90,7 +91,8 @@
     box-sizing: border-box;
     background-color: #e6e5e5;
     resize: none;
-    border-radius: 999px; /* 橫向橢圓形 */
+    border-radius: 999px;
+    /* 橫向橢圓形 */
 
 }
 
@@ -100,7 +102,8 @@
     border: none;
     cursor: pointer;
     padding: 20px;
-    border-radius: 999px; /* 橫向橢圓形 */
+    border-radius: 999px;
+    /* 橫向橢圓形 */
 }
 
 
@@ -150,11 +153,11 @@
 /*機器人*/
 
 
-.bot-message-icon{
+.bot-message-icon {
     background-color: #33eee2;
 }
 
-.bot-message-content{
+.bot-message-content {
     color: #000000;
 }
 
@@ -166,31 +169,36 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    margin-left:auto ;
+    margin-left: auto;
 }
 
 .message-content {
-    background-color: #f0f0f0; /* 灰色 */
+    background-color: #f0f0f0;
+    /* 灰色 */
     padding: 20px;
     border-radius: 20px;
-    word-wrap: break-word; /* 自动换行 */
+    word-wrap: break-word;
+    /* 自动换行 */
     max-width: 70%;
-    text-align: left; /* 对齐方式 */
+    text-align: left;
+    /* 对齐方式 */
     /* margin: 10px; */
-    
+
 }
 
 
 .user-message-content {
-    text-align: left; /* 对齐方式 */
+    text-align: left;
+    /* 对齐方式 */
     background-color: #333;
     color: #fff;
     padding: 20px;
     /* margin: 10px; */
     border-radius: 20px;
     word-wrap: break-word;
-    align-self: flex-end; /*将userMessage靠右*/
-    
+    align-self: flex-end;
+    /*将userMessage靠右*/
+
 }
 
 .message-icon {
@@ -199,15 +207,15 @@
     border-radius: 50%;
     margin-right: 10px;
     margin-left: 10px;
-    width:50px;
+    width: 50px;
     height: 50px;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 
-.user-message-icon{
+.user-message-icon {
     background-color: #b6e232;
 }
 
@@ -221,7 +229,7 @@
     margin-top: 5px;
     color: #777;
     margin-right: 30px;
-    
+
 }
 
 
@@ -231,7 +239,8 @@
     background: #dedede;
     font-size: 16px;
     width: calc(100% - 700px);
-    margin-left: auto;/*讓width在中間*/
+    margin-left: auto;
+    /*讓width在中間*/
     margin-right: auto;
 }
 
@@ -251,5 +260,16 @@
 .copyright {
     font-size: 0.9rem;
     text-align: center;
- 
+
+}
+
+/*Mic樣式*/
+#mic-btn{
+    background-color: rgb(3, 86, 154);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 999px;
+    /* 橫向橢圓形 */
 }
