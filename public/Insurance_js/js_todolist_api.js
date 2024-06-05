@@ -1,6 +1,7 @@
 import { TODO } from './class/TODO.js';
 import { UID } from './class/UID.js';
 
+alert("請輸入電子郵件");
 let todoApp = document.querySelector('#todo-app');
 let uidApp = document.querySelector('#uid-app');
 let uid = UID.read();
