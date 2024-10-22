@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+</head>
+
+<style>
+.container {
+    border: none;
+    background: rgb(249, 249, 249);
+    width: 900px;
+    display: block;
+    margin: 0px auto 50px auto;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 30px;
+    padding-bottom: 60px;
+}
+
+.input_all {
+    /* 輸入長度尺寸 */
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+.top_text {
+    /*標題*/
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about {
+    margin: 10px;
+    margin-top: 20px;
+    font-family: arial;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.about>p {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.in_about {
+    /*	text長度	*/
+    width: 350px;
+}
+
+
+input {
+    font-size: 20px;
+    /*	width:100%;*/
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-color: rgb(205, 205, 205);
+}
+
+/*********************/
+.btn {
+    width: 45px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+</style>
+
+
+
+<body>
+
+    <div class="wrap">
+        <form action="sign_res.php" method="post">
+            <div class="container">
+                <div class="input_all">
+                    <h1 class="top_text">電子郵件註冊</h1>
+                    <div class="about">
+                        <p>電子郵件</p>
+                        <input type="email" name="in_email" placeholder="請輸入電子郵件" class='in_about' required>
+                    </div>
+
+                    <div class="input_all">
+
+                        <div class="about">
+                            <p>密碼</p>
+                            <input type="password" name="in_pass" placeholder="請輸入密碼" class='in_about' required>
+                        </div>
+
+                        <button class="btn">註冊</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+
+
+
+</body>
+
+</html>
