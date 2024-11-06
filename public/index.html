@@ -7,6 +7,8 @@
     <title>lnsurance</title>
     <!-- AOS的動畫連接 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- 專題的CSS連接 -->
     <link rel="stylesheet" href="Insurance_css/reset.css">
     <link rel="stylesheet" href="Insurance_css/header.css">
@@ -32,6 +34,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- AOS的動畫連接 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 專題的JS連接 -->
     <script src="/Insurance_js/jquery.min.js"></script>
     <!-- 檢查網站 -->
@@ -58,6 +61,12 @@
                             <div class="zh">首頁</div>
                         </a>
                     </li>
+                    <li>
+                        <a href="#swiper">
+                            <div class="en">Operation manual</div>
+                            <div class="zh">操作介紹</div>
+                        </a>
+                    </li>
                     <li class="menu-item">
                         <div style="color: #9acfa9;">
                             <div class="en">Courses</div>
@@ -69,17 +78,6 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            <div class="en">Hit me</div>
-                            <div class="zh">智慧服務
-                                <ul class="sub-menu">
-                                    <a href="stock.html">股票專區</a>
-                                    <a href="Insurance.html">保險專區</a>
-                                </ul>
-                            </div>
-                        </a>
                     </li>
                     <li>
                         <a href="#investments">
@@ -93,12 +91,7 @@
                             <div class="zh">常見問題</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="todolist.html">
-                            <div class="en">person_insurance</div>
-                            <div class="zh">個人寶庫</div>
-                        </a>
-                    </li>
+                    
 
             </div>
         </div>
@@ -127,6 +120,36 @@
 
         </div>
     </div>
+    <!-- 輪播圖 -->
+
+    <!-- Slider main container -->
+    <div class="swiper" id="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="Insurance_images/image/AIimage1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Insurance_images/image/AIimage2.png" alt="">
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
+
 
     <div class="page p-2" id="person">
         <h1 class="slogan">人身保險</h1>
@@ -399,10 +422,28 @@
 </body>
 <script src="Insurance_js/index.js"></script>
 
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger intent="WELCOME" chat-title="AI_bot" agent-id="e3539b8b-1645-457c-922f-3568c67d5e52"
-    language-code="zh-tw"></df-messenger>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
 
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 
 
 </html>
